@@ -14,6 +14,5 @@ func sumLocations(vec: Array) -> Array:
 
 func _ready():
     var vec = [Vector2(16, 3), Vector2(22, 10), Vector2(4, 56), Vector2(10, 5)]
-    var result = sumLocations(vec)
 
     print(result)
