@@ -1,17 +1,19 @@
 extends Node
-func sumLocations(vec):
-    var vectorY = []
-    var vectorX = []
-    var todos = [vectorX,vectorY]
-    for i in (vec):
-        while (i=vector.y):
-        	(vectorY).appent
-        else (i=vector.x):
-             (vectorX).appent
-	
-	return todos            
+
+func sumLocations(vec: Array) -> Array:
+    var sumXY = [0, 0]
+    var index = 0
+
+    while index < vec.size():
+        var suma = vec[index]
+        sumXY[0] += suma.x
+        sumXY[1] += suma.y
+        index += 1
+
+    return sumXY
+
 func _ready():
-    var vec = [Vector2(16,3),Vector2(22,10),Vector2(4,56),Vector2(10,5)]
-	sumLocations(vec):
-    print (todos):
-    pass
+    var vec = [Vector2(16, 3), Vector2(22, 10), Vector2(4, 56), Vector2(10, 5)]
+    var result = sumLocations(vec)
+
+    print(result)
