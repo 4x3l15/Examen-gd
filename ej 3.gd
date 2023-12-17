@@ -14,5 +14,5 @@ func _ready():
     var inputArr = [2, 4, 1, 0]
     var outputArr = applyFunction(inputArr)
     
-    print("Entrada:", inputArr)
-    print("Salida:", outputArr)
+    print("Numeros Enteros:", inputArr)
+    print("Resultados:", outputArr)
