@@ -1,18 +1,18 @@
 extends Node
-func historial(inventory):
-    var inventory = {
 
-		name:"Julian",
-		surname:"Alvarez",
-		goals: 4,
-		teams: [“Polonia”, “Australia”, “Croacia”, “Croacia”]
-		}
+func historial() -> Dictionary:
+    var inventory = {
+        "name": " Julian",
+        "surname": "Alvarez",
+        "goals": " 4 ",
+        "teams": ["Polonia", "Australia", "Croacia", "Croacia"]
+    }
     return inventory
+
 func _ready():
-    historial(inventory):
-    print (name,surname,goals,"goles")
-    for i in (teams):
-		 print (i,"1","goles")
-    # Called every time the node is added to the scene.
-    # Initialization here
-    pass
+    var playerInfo = historial()
+
+    print(playerInfo["surname"], playerInfo["name"], playerInfo["goals"], "goles")
+
+    for i in playerInfo["teams"]:
+        print(i, " 1 gol")
